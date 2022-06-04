@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>TeraAgenda</title>
+</head>
+
+<body>
+    <header>        
+        <nav>
+            <h1><a href="index.html">Tera Agenda</a></h1>              
+        </nav>
+    </header>   
+
+    <main>
+
+        <form>
+            <h2>Cadastre suas informações</h2>
+        <div>
+            <label for="razaoSocial">Razão Social:</label>
+            <input name="razaoSocial" type="text" id="razaoSocial" placeholder="Informe a Razão Social" required>*
+        </div>
+
+        <div>
+            <label for="cnpj">CNPJ:</label>
+            <input name="cnpj" type="text" id="cnpj" placeholder="00.000.000/000-00" required>*
+        </div>
+
+        <div>
+            <label for="fone">Telefone comercial:</label>
+            <input name="fone" type="tel" id="fone" placeholder="(00) 00000-0000" required>*
+        </div>
+       
+        <div>
+            <label for="email">E-mail:</label>
+            <input name="email" type="email" id="email" placeholder="...@email.com" required>*
+        </div>
+
+        <div>
+            <label for="endereco">Endereço:</label>
+            <input name="endereco" type="text" id="endereco" placeholder="Rua, Avenida, Travessa, Estrada, Praça, Viela, ..." required>*
+        </div>
+
+        <div>
+            <label for="numero">Número:</label>
+            <input name="numero" type="text" id="numero" placeholder="Informe o número" required>*
+        </div>
+
+        <div>
+            <label for="blocoSala">Bloco/Sala:</label>
+            <input name="blocoSala" type="text" id="blocoSala" placeholder="Número do bloco ou sala">
+        </div>
+
+        <div>
+            <label for="bairro">Bairro:</label>
+            <input name="bairro" type="text" id="bairro" placeholder="Informe o bairro" required>*
+        </div>
+     
+        <div>
+            <label for="uf">UF</label>
+            <select id="uf">
+                <option value="" selected="selected">Selecione</option>
+                <option value="AC">Acre</option>
+                <option value="AL">Alagoas</option>
+                <option value="AP">Amapá</option>
+                <option value="AM">Amazonas</option>
+                <option value="BA">Bahia</option>
+                <option value="CE">Ceará</option>
+                <option value="DF">Distrito Federal</option>
+                <option value="ES">Espírito Santo</option>
+                <option value="GO">Goiás</option>
+                <option value="MA">Maranhão</option>
+                <option value="MT">Mato Grosso</option>
+                <option value="MS">Mato Grosso do Sul</option>
+                <option value="MG">Minas Gerais</option>
+                <option value="PA">Pará</option>
+                <option value="PB">Paraíba</option>
+                <option value="PR">Paraná</option>
+                <option value="PE">Pernambuco</option>
+                <option value="PI">Piauí</option>
+                <option value="RJ">Rio de Janeiro</option>
+                <option value="RN">Rio Grande do Norte</option>
+                <option value="RS">Rio Grande do Sul</option>
+                <option value="RO">Rondônia</option>
+                <option value="RR">Roraima</option>
+                <option value="SC">Santa Catarina</option>
+                <option value="SP">São Paulo</option>
+                <option value="SE">Sergipe</option>
+                <option value="TO">Tocantins</option>
+            </select>*      
+        </div>
+               
+        <div>
+            <label for="cadastroSenha">Senha:</label>
+            <input name="cadastroSenha" type="password" id="cadastroSenha" placeholder="Informe a senha" required>*
+        </div>
+
+        <div>
+            <label for="confirmSenha">Confirme a senha:</label>
+            <input name="confirmSenha" type="password" id="confirmSenha" placeholder="Confirme a senha" required>*
+        </div>
+
+        <h3>Responsável pela empresa</h3>
+           
+            <div>
+                <label for="nome">Nome completo:</label>
+                <input name="nome" type="text" id="nome" placeholder="Digite seu nome completo" required>*
+            </div>
+
+            <div>
+                <label for="fonePessoal">Telefone:</label>
+                <input name="fonePessoal" type="tel" id="fonePessoal" placeholder="(00) 00000-0000" required>*
+            </div>
+           
+            <div>
+                <p>(*) Campo obrigatório</p>                    
+            </div>
+
+            <div>
+                <button type="submit" id="btnEnviar">Enviar</button>
+              </div>
+              </form> 
+                         
+    </main>
+
+    <div style="display:none" id="mensagem">
+        <h1 id="tituloMensagem"></h1>
+        <p id="paragrafo"></p>
+    </div>
+
+</form>
+
+<footer>
+    <div class="redes">
+        <h3>Sigam-nos nas Redes sociais</h3>
+        <a href="https://pt-br.facebook.com/"><img src="assets/logo_facebook.png" alt="Logo Facebook"></a>
+        <a href="https://www.instagram.com/"><img src="assets/logo_instagram.png" alt="Logo do Instagram"></a>
+        <a href="https://www.youtube.com/"><img src="assets/logo_youtube.png" alt="Logo do Youtube"></a>
+    </div>
+
+    <div class="cabecalho">
+    <p><b>Fale conosco</b></p>
+    <img src="assets/logo_gmail.png" alt="Logo Gmail">
+    <a href="#">nayara.dcf@gmail.com</a>
+    <img src="assets/logo_gmail.png" alt="Logo Gmail">
+    <a href="#">renato.carvalho@gmail.com</a>
+    
+    <p>© 2022 Tera Agenda Serviços de Tecnologia Ltda.
+    </p>
+    </div>
+</footer>      
+    
+    <script src="https://unpkg.com/imask"></script>
+    
+</body>
+
+<script src="app/app.js"></script>
+
+</html>
