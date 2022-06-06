@@ -17,7 +17,7 @@
 
     <main>
 
-        <form>
+        <form action="http://127.0.0.1:5500/entrar.html" id="formCadastre" onsubmit="return funcConfirmar()">
             <h2>Cadastre suas informações</h2>
         <div>
             <label for="razaoSocial">Razão Social:</label>
@@ -61,7 +61,7 @@
      
         <div>
             <label for="uf">UF</label>
-            <select id="uf">
+            <select id="uf" required>
                 <option value="" selected="selected">Selecione</option>
                 <option value="AC">Acre</option>
                 <option value="AL">Alagoas</option>
@@ -124,14 +124,7 @@
               </div>
               </form> 
                          
-    </main>
-
-    <div style="display:none" id="mensagem">
-        <h1 id="tituloMensagem"></h1>
-        <p id="paragrafo"></p>
-    </div>
-
-</form>
+    </main> 
 
 <footer>
     <div class="redes">
