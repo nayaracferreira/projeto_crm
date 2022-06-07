@@ -21,6 +21,7 @@ header{
     border-bottom: solid #e3e7e4 2px;
     box-shadow: 0px 2px 0px #dce0e2;
 }
+
 nav{
     width: 100%;
     display: flex;
@@ -60,28 +61,183 @@ main{
     margin-top: 100px;
 }
 
-h2{
-    color:#75db8f;
+/* MAIN DA INDEX ---------------------------------- */
+main img{
+    width: 350px;
+    height: 350px;
 }
 
-h3{
+#calendario{
+    display:flex;
+    text-align: center;
+    margin-top: 10px;
+}
+
+#calendario img{
+    width: 450px;
+    height: 300px;
+}
+
+#calendario p{
+    margin-top: 90px;
+    margin-right: 20px;
+    font-size: 110%;    
+}
+
+#quemSomos{    
+    display: flex;
+    margin-top: 20px;
+    text-align: center;
+}
+
+#quemSomos p{
+    margin-top: 30px;
+    margin-left: 20px;
+}
+
+
+#quemSomosTitulo{
+    margin-top: 50px;
+    font-size: 30px;
+}
+
+h2, h3{
     color:#75db8f;
+    text-align: center;
+    margin-top: 5px;
+}
+/* MAIN DO ENTRAR --------------------------------- */
+#mainEntrar{
+    width: 70%;
+    margin-top:30px;
+    margin-left: 50%;
+    transform: translateX(-50%);
+    border: solid 2px #62ab74;    
+    border-radius: 20px;     
+}
+
+#formEntrar {
+    margin-top: 5px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.btnAcesso{
+    background-color: #75db8f;
+    color: #fff;
+    font-weight: 900;
+    border: none;
+    border-radius: 20px;    
+    width: 30%;
+    padding:2%;
+    margin-top: 5%;
+    margin-left: 35%;
+    margin-bottom: 2%;
+    cursor: pointer;
+}
+/* MAIN AGENDAMENTO -------------------------------- */
+#formAgendamento{
+    text-align: center;
+    display: flex;
+    flex-direction: column; 
+    border: solid 2px #62ab74;    
+    border-radius: 20px;   
+    width: 40%;
+    padding:2%;
+    margin-top: 5%;
+    margin-left: 27%;
+    margin-bottom: 10%;
+    cursor: pointer;   
+}
+
+#formAgendamento label{   
+    text-align: left;
+}
+
+.btnAgendamento{
+    background-color: #75db8f;
+    color: #fff;
+    font-weight: 900;
+    border: none;
+    border-radius: 20px;    
+    width: 50%;
+    padding:2%;
+    margin-top: 5%;
+    margin-left: 25%;
+    margin-bottom: 2%;
+    cursor: pointer;
+}
+
+/* MAIN CADASTRE ---------------------------------*/
+#formCadastre{
+    width: 80%;    
+    margin: 15px;
+    border: solid 2px #62ab74;    
+    border-radius: 20px;    
+    display: flex;
+    flex-direction : column; 
+}
+
+#formCadastre input{
+    display: flex; 
+    width: 90%;   
+    margin-left: 5px;
+}
+
+#formCadastre label{
+    margin-left: 5px;
+}
+
+.local{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;        
+}
+
+#uf{
+    margin-top: 20px;
+}
+
+.campo{
+    margin-top: 15px;    
+}
+
+#btnEnviar{
+    background-color: #75db8f;
+    color: #fff;
+    font-weight: 900;
+    border: none;
+    border-radius: 20px;    
+    width: 15%;
+    padding:2%;
+    margin-top: 5%;
+    margin-left: 40%;
+    margin-bottom: 2%;
+    cursor: pointer;
 }
 
 footer{
+    margin-top: 30px;
     display: flex; 
     flex-direction: column;
     width: 100%;
+}
+
+footer h3{    
+    padding-top: 10px;
+    border-top: solid #e3e7e4 5px;    
 }
 
 .redes{    
     display: flex; 
     width: 100%;
     justify-content: center;    
-    color: #fff;
-    border-top: solid #e3e7e4 5px;
-    border-bottom: solid #e3e7e4 2px;
-    box-shadow: 0px 2px 0px #dce0e2;   
+    color: #fff;    
+    padding: 20px;   
+    justify-content: space-around;
+    border-bottom: solid #e3e7e4 2px;  
+    box-shadow: 0px 2px 0px #dce0e2; 
 } 
 
 .redes img{
@@ -91,11 +247,27 @@ footer{
 
 .cabecalho{    
     width:100%;
-    height: 150px;      
+    height: 150px;       
     background: linear-gradient(#abecb6, #b8d5e4);
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    text-align: left;
 }
 
 .cabecalho img{
+    margin-top: 10px;
     width: 30px;
     height: 30px;
+}
+
+#faleConosco{    
+    color: rgb(57, 144, 69);
+    font-size: larger
+}
+
+#©{
+    margin-top:35px;
+    margin-right: 20px;
+    text-align: right;    
 }
