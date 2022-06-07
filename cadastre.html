@@ -15,52 +15,53 @@
         </nav>
     </header>   
 
-    <main>
+     <main>
 
-        <form action="entrar.html" id="formCadastre" onsubmit="return funcConfirmar()">
+        <form action="http://127.0.0.1:5500/entrar.html" id="formCadastre" onsubmit="return funcConfirmar()">
             <h2>Cadastre suas informações</h2>
         <div>
-            <label for="razaoSocial">Razão Social:</label>
-            <input name="razaoSocial" type="text" id="razaoSocial" placeholder="Informe a Razão Social" required>*
+            <label for="razaoSocial">Razão Social*</label>
+            <input name="razaoSocial" type="text" id="razaoSocial" placeholder="Informe a Razão Social" required>
         </div>
 
         <div>
-            <label for="cnpj">CNPJ:</label>
-            <input name="cnpj" type="text" id="cnpj" placeholder="00.000.000/000-00" required>*
+            <label for="cnpj">CNPJ*</label>
+            <input name="cnpj" type="text" id="cnpj" placeholder="00.000.000/000-00" required>
         </div>
 
         <div>
-            <label for="fone">Telefone comercial:</label>
-            <input name="fone" type="tel" id="fone" placeholder="(00) 00000-0000" required>*
+            <label for="fone">Telefone comercial*</label>
+            <input name="fone" type="tel" id="fone" placeholder="(00) 00000-0000" required>
         </div>
        
         <div>
-            <label for="email">E-mail:</label>
-            <input name="email" type="email" id="email" placeholder="...@email.com" required>*
+            <label for="email">E-mail*</label>
+            <input name="email" type="email" id="email" placeholder="...@email.com" required>
+        </div>
+
+        <div class="local">            
+        <div>
+            <label for="endereco">Endereço*</label>
+            <input name="endereco" type="text" id="endereco" placeholder="Rua, Avenida, Travessa, Estrada, Praça, Viela, ..." required>
         </div>
 
         <div>
-            <label for="endereco">Endereço:</label>
-            <input name="endereco" type="text" id="endereco" placeholder="Rua, Avenida, Travessa, Estrada, Praça, Viela, ..." required>*
+            <label for="numero">Número*</label>
+            <input name="numero" type="text" id="numero" placeholder="Informe o número" required>
         </div>
 
         <div>
-            <label for="numero">Número:</label>
-            <input name="numero" type="text" id="numero" placeholder="Informe o número" required>*
-        </div>
-
-        <div>
-            <label for="blocoSala">Bloco/Sala:</label>
+            <label for="blocoSala">Bloco/Sala</label>
             <input name="blocoSala" type="text" id="blocoSala" placeholder="Número do bloco ou sala">
         </div>
 
         <div>
-            <label for="bairro">Bairro:</label>
-            <input name="bairro" type="text" id="bairro" placeholder="Informe o bairro" required>*
+            <label for="bairro">Bairro*</label>
+            <input name="bairro" type="text" id="bairro" placeholder="Informe o bairro" required>
         </div>
      
         <div>
-            <label for="uf">UF</label>
+            <label for="uf">UF*</label>
             <select id="uf" required>
                 <option value="" selected="selected">Selecione</option>
                 <option value="AC">Acre</option>
@@ -91,40 +92,42 @@
                 <option value="SE">Sergipe</option>
                 <option value="TO">Tocantins</option>
             </select>*      
+        </div>    
         </div>
                
         <div>
-            <label for="cadastroSenha">Senha:</label>
-            <input name="cadastroSenha" type="password" id="cadastroSenha" placeholder="Informe a senha" required>*
+            <label for="cadastroSenha">Senha*</label>
+            <input name="cadastroSenha" type="password" id="cadastroSenha" placeholder="Informe a senha" required>
         </div>
 
         <div>
-            <label for="confirmSenha">Confirme a senha:</label>
-            <input name="confirmSenha" type="password" id="confirmSenha" placeholder="Confirme a senha" required>*
+            <label for="confirmSenha">Confirme a senha*</label>
+            <input name="confirmSenha" type="password" id="confirmSenha" placeholder="Confirme a senha" required>
         </div>
 
         <h3>Responsável pela empresa</h3>
            
             <div>
-                <label for="nome">Nome completo:</label>
-                <input name="nome" type="text" id="nome" placeholder="Digite seu nome completo" required>*
+                <label for="nome">Nome completo*</label>
+                <input name="nome" type="text" id="nome" placeholder="Digite seu nome completo" required>
             </div>
 
             <div>
-                <label for="fonePessoal">Telefone:</label>
-                <input name="fonePessoal" type="tel" id="fonePessoal" placeholder="(00) 00000-0000" required>*
+                <label for="fonePessoal">Telefone*</label>
+                <input name="fonePessoal" type="tel" id="fonePessoal" placeholder="(00) 00000-0000" required>
             </div>
            
-            <div>
+            <div class="campo">
                 <p>(*) Campo obrigatório</p>                    
             </div>
 
             <div>
-                <button type="submit" id="btnEnviar">Enviar</button>
+                <button type="submit" value="Validar" id="btnEnviar">Enviar</button>
               </div>
               </form> 
                          
-    </main> 
+    </main>
+
 
 <footer>
         <h3>Sigam-nos nas Redes sociais</h3>
@@ -155,6 +158,6 @@
     
 </body>
 
-<script src="app/app.js"></script>
+<script src="app.js"></script>
 
 </html>
