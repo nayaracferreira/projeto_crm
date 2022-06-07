@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <title>Adicionar em opções</title>
+    <title>TeraAgenda</title>
 </head>
 
 <body>    
@@ -30,7 +30,7 @@
         
             <h3>Serviços</h3>
             <input type="text" id="caixaTextoInputServico"  placeholder="Adicionar serviço oferecido.">
-            <button type="button" id="botaoAdicionarServico">Adicionar</button>
+            <button type="button" id="botaoAdicionarServico" class="btnAgendamento">Adicionar</button>
     
             <label for="listaServicos">Selecione o Serviço:</label>
             <select id="listaServicos">   
@@ -39,30 +39,35 @@
 
             <label>Data:</label><input type="text"placeholder="dia/mês/ano" name="dataAgendada" id="dataAgendada" class="informacaoTexto" > <!-- Index 3 -->
 
-            <button type="button" id="botaoAgendarServico">Agendar Serviço</button>
+            <button type="button" id="botaoAgendarServico" class="btnAgendamento">Agendar Serviço</button>
         </form>
         <h2 id="testoAgendado"></h2>
     </main>
 
     <footer>
-        <div class="redes">
-            <h3>Sigam-nos nas Redes sociais</h3>
+        <h3>Sigam-nos nas Redes sociais</h3>
+        <div class="redes">            
             <a href="https://pt-br.facebook.com/"><img src="assets/logo_facebook.png" alt="Logo Facebook"></a>
             <a href="https://www.instagram.com/"><img src="assets/logo_instagram.png" alt="Logo do Instagram"></a>
             <a href="https://www.youtube.com/"><img src="assets/logo_youtube.png" alt="Logo do Youtube"></a>
         </div>
 
         <div class="cabecalho">
-        <p><b>Fale conosco</b></p>
-        <img src="assets/logo_gmail.png" alt="Logo Gmail">
-        <a href="#">nayara.dcf@gmail.com</a>
-        <img src="assets/logo_gmail.png" alt="Logo Gmail">
-        <a href="#">renato.carvalho@gmail.com</a>
-        
-        <p>© 2022 Tera Agenda Serviços de Tecnologia Ltda.
-        </p>
-        </div>
-    </footer>      
+            <p id="faleConosco"><b>Fale conosco</b></p>
+            <div>
+                <img src="assets/logo_gmail.png" alt="Logo Gmail">        
+            </div>
+            <div>
+            <a href="#">nayara.dcf@gmail.com</a>
+            </div>
+            <div>
+            <a href="#">renatogamedesigner@gmail.com</a>
+            </div>
+            
+            <p id="©">© 2022 Tera Agenda Serviços de Tecnologia Ltda.
+            </p>
+            </div>
+        </footer>              
     
     <script src="app/app_agenda.js"></script>
 </body>
