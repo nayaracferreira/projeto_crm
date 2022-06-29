@@ -27,7 +27,37 @@
 
             <label>E-mail: </label>
             <input type="text"placeholder="E-mail do cliente" name="emailDoCliente" id="emailDoCliente" class="informacaoTexto" > <!-- Index 2 -->
-        
+        <!-- -----------------------------------ADICIONADO--INICÍO------------------------------------------------ -->
+            <div>
+                <label for="cep">Cep*</label><!--Adicionar no gitHub-->
+                <input name="cep" type="text" id="Cep" placeholder="Rua, Avenida, Travessa, Estrada, Praça, Viela, ..." required>
+            </div>
+
+            <div>
+                <label for="endereco">Endereço*</label>
+                <input name="endereco" type="text" id="endereco" placeholder="Rua, Avenida, Travessa, Estrada, Praça, Viela, ..." required>
+            </div>
+    
+            <div>
+                <label for="numero">Número*</label>
+                <input name="numero" type="text" id="numero" placeholder="Informe o número" required>
+            </div>
+    
+            <div>
+                <label for="blocoSala">Bloco/Sala</label>
+                <input name="blocoSala" type="text" id="blocoSala" placeholder="Número do bloco ou sala">
+            </div>
+    
+            <div>
+                <label for="bairro">Bairro*</label>
+                <input name="bairro" type="text" id="bairro" placeholder="Informe o bairro" required>
+            </div>       
+            
+            <div>
+                <label for="uf">UF*</label>
+                <input name="uf" type="text" id="uf" placeholder="Informe a UF" required>
+            </div>
+<!-- -----------------------------------ADICIONADO--INICÍO------------------------------------------------ -->
             <h3>Serviços</h3>
             <input type="text" id="caixaTextoInputServico"  placeholder="Adicionar serviço oferecido.">
             <button type="button" id="botaoAdicionarServico" class="btnAgendamento">Adicionar</button>
