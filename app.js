@@ -13,12 +13,26 @@ let patternMask = IMask(cnpj, {
    mask: '00.000.000/0000-00'
    });
 
-function funcConfirmar() {
-     if (confirm("Deseja confirmar o cadastro?") == true) {
-     window.alert('Seu cadastro foi concluído com sucesso!');
-     return true;
-     }
-     }
+function funcConfirmar(event) {
+   const senhaValida = validaSenha() 
+   if (senhaValida){
+     window.alert("AS SENHAS ESTÃO DIFERENTES"); 
+     event.preventDefault()
+     return   
+   }
+
+    if (confirm("Deseja confirmar o cadastro?") == true) {
+      window.alert('Seu cadastro foi concluído com sucesso!');
+      return true;
+    }
+  }
+
+  function validaSenha(){
+    cadastroSenha = document.getElementById('cadastroSenha').value;
+    confirmSenha = document.getElementById('confirmSenha').value;
+    console.log({cadastroSenha, confirmSenha})
+    return cadastroSenha !== confirmSenha
+  }
 
 const cep = document.querySelector("#cep");
   const options = {
