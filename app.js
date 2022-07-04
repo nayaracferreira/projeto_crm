@@ -13,7 +13,7 @@ let patternMask = IMask(cnpj, {
    mask: '00.000.000/0000-00'
    });
 
-function funcConfirmar(event) {
+   function funcConfirmar(event) {
    const senhaValida = validaSenha() 
    if (senhaValida){
      window.alert("AS SENHAS ESTÃO DIFERENTES"); 
@@ -63,4 +63,5 @@ const cep = document.querySelector("#cep");
       })
     })
   })
- 
+
+  
