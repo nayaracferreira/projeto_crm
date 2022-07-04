@@ -84,3 +84,10 @@ const cep = document.querySelector("#cep");
       })
     })
   })
+
+  let foneMask = document.getElementById('telefoneDoCliente');  
+  let maskOptions = {
+   mask: '+{55}(00)00000-0000'
+  }
+ 
+   let mask = IMask(foneMask, maskOptions);   
