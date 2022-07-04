@@ -37,7 +37,7 @@ h1{
     margin-left: 10px;
     color: #75db8f ;
     font-size: 40px; 
-    text-shadow: 2px 2px #013104b3;
+    text-shadow: 2px 2px black;
     min-width: 240px;   
 }
 
@@ -56,7 +56,7 @@ nav img{
 }
 
 main{   
-    width: 650px; /* Tentar 650px e no @media only colocar 100%*/
+    width: 100%; 
     height: auto;
     margin-left: 50%;
     transform: translateX(-50%);
