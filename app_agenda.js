@@ -19,8 +19,6 @@ let InformacoesAgendadasCliente= {
 }
 
 
-
-
 function AdicionarServicoLista(){    // função cria um elemento e colocar ele na lista de serviço usando o que usuario colocal de input 
     
     let textoCaixa = document.getElementById('caixaTextoInputServico').value;  //valor do input do usuario
@@ -39,17 +37,50 @@ function AdicionarServicoLista(){    // função cria um elemento e colocar ele 
 
 }
 
+
 function MostrarInformacaoNaPagina(){
 
     InformacoesAgendadasCliente.nome = document.getElementById("nomeDoCliente").value;
     InformacoesAgendadasCliente.telefone = document.getElementById("telefoneDoCliente").value;
     InformacoesAgendadasCliente.email = document.getElementById("emailDoCliente").value;
+    InformacoesAgendadasCliente.logradouro = document.getElementById("logradouro").value;
+    InformacoesAgendadasCliente.numero = document.getElementById("numero").value;
+    InformacoesAgendadasCliente.bairro = document.getElementById("bairro").value;
+    InformacoesAgendadasCliente.localidade = document.getElementById("localidade").value;
+    InformacoesAgendadasCliente.uf = document.getElementById("uf").value;    
     InformacoesAgendadasCliente.servico = listaServicoAtuais.value;
     InformacoesAgendadasCliente.data = document.getElementById("dataAgendada").value;
 
-    testoAgendado.textContent = `Cliente de nome ${InformacoesAgendadasCliente.nome} com o telefone ${InformacoesAgendadasCliente.telefone} e com e-mail  ${InformacoesAgendadasCliente.email} está com o serviço de ${InformacoesAgendadasCliente.servico } agendado para o dia ${InformacoesAgendadasCliente.data}`
+    testoAgendado.textContent = `Cliente de nome ${InformacoesAgendadasCliente.nome} com o telefone ${InformacoesAgendadasCliente.telefone} que mora na rua ${InformacoesAgendadasCliente.logradouro}, ${InformacoesAgendadasCliente.numero} no bairro ${InformacoesAgendadasCliente.bairro}, ${InformacoesAgendadasCliente.localidade}, ${InformacoesAgendadasCliente.uf} e com e-mail  ${InformacoesAgendadasCliente.email} está com o serviço de ${InformacoesAgendadasCliente.servico } agendado para o dia ${InformacoesAgendadasCliente.data}`
 
 }
 
+const cep = document.querySelector("#cep");
+  const options = {
+    method:'GET',
+    mode: 'cors',
+    cache: 'default'
+  }
 
-
+  const showData = (result) => {
+    for(const campo in result) {
+      if(document.querySelector("#"+campo)){
+        document.querySelector("#"+campo).value = result[campo];
+      }
+    }
+  }
+  cep.addEventListener("blur", (e) => {
+    let search = cep.value.replace("-", "");
+    console.log(search);
+    fetch(`https://viacep.com.br/ws/${search}/json/`, options)
+    .then(response =>{
+      response.json()
+      .then(dados =>{
+        document.querySelector("#logradouro").value=dados.logradouro;
+        document.querySelector("#localidade").value=dados.localidade;
+        document.querySelector("#bairro").value=dados.bairro;
+        document.querySelector("#uf").value = dados.uf;
+        document.querySelector("#nr_end").focus();
+      })
+    })
+  })
