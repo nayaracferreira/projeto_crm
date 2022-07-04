@@ -25,6 +25,8 @@ header{
 nav{
     width: 100%;
     display: flex;
+    align-content: center;
+    justify-content: space-evenly;
 }
 
 h1{
@@ -32,8 +34,11 @@ h1{
     height: 50%;      
     text-align: center;
     margin-top: 20px; 
+    margin-left: 10px;
     color: #75db8f ;
-    font-size: 40px;    
+    font-size: 40px; 
+    text-shadow: 2px 2px #013104b3;
+    min-width: 240px;   
 }
 
 nav a{
@@ -51,7 +56,7 @@ nav img{
 }
 
 main{   
-    width: 650px;
+    width: 650px; /* Tentar 650px e no @media only colocar 100%*/
     height: auto;
     margin-left: 50%;
     transform: translateX(-50%);
@@ -61,6 +66,9 @@ main{
     margin-top: 100px;
 }
 
+#sigaNos{
+    margin-bottom: 15px;
+}
 /* MAIN DA INDEX ---------------------------------- */
 main img{
     width: 350px;
@@ -71,6 +79,8 @@ main img{
     display:flex;
     text-align: center;
     margin-top: 10px;
+    width: 90%;
+    margin-left: 5%;
 }
 
 #calendario img{
@@ -108,12 +118,14 @@ h2, h3{
 }
 /* MAIN DO ENTRAR --------------------------------- */
 #mainEntrar{
-    width: 70%;
-    margin-top:30px;
-    margin-left: 50%;
-    transform: translateX(-50%);
-    border: solid 2px #62ab74;    
-    border-radius: 20px;     
+   margin-top:30px;
+   border: solid 2px #62ab74;    
+   border-radius: 20px;    
+   padding-bottom: 10px;
+   display:flex;
+   flex-direction: column;
+   justify-content: center; 
+   align-items: center;    
 }
 
 #formEntrar {
@@ -121,6 +133,9 @@ h2, h3{
     text-align: center;
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
 }
 
 .btnAcesso{
@@ -130,29 +145,42 @@ h2, h3{
     border: none;
     border-radius: 20px;    
     width: 30%;
-    padding:2%;
-    margin-top: 5%;
-    margin-left: 35%;
-    margin-bottom: 2%;
     cursor: pointer;
+    min-width: 105px;
+    min-height: 35px;
+    max-height: 40px;
 }
 /* MAIN AGENDAMENTO -------------------------------- */
+#consulteAgenda{
+    max-width: 120px;
+    text-shadow: 1px 1px black;
+    font-size:18px;
+    font-weight: 700;
+}
+
 #formAgendamento{
     text-align: center;
     display: flex;
     flex-direction: column; 
     border: solid 2px #62ab74;    
     border-radius: 20px;   
-    width: 40%;
     padding:2%;
-    margin-top: 5%;
-    margin-left: 27%;
-    margin-bottom: 10%;
+    width: 86%;
+    margin-left: 5%;    
+    justify-content: center;
     cursor: pointer;   
 }
 
 #formAgendamento label{   
     text-align: left;
+}
+
+.btnHolderAgendamento{
+    width: 100%;
+    margin-top: 5px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .btnAgendamento{
@@ -161,22 +189,28 @@ h2, h3{
     font-weight: 900;
     border: none;
     border-radius: 20px;    
-    width: 50%;
-    padding:2%;
-    margin-top: 5%;
-    margin-left: 25%;
-    margin-bottom: 2%;
     cursor: pointer;
+    min-width: 140px;
+    max-width: 150px;
+    min-height: 40px;
+    max-height: 50px;
 }
 
 /* MAIN CADASTRE ---------------------------------*/
+#cadastrese{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
 #formCadastre{
-    width: 80%;    
-    margin: 15px;
     border: solid 2px #62ab74;    
     border-radius: 20px;    
     display: flex;
     flex-direction : column; 
+    margin-top: 10px;
 }
 
 #formCadastre input{
@@ -192,15 +226,18 @@ h2, h3{
 .local{
     width: 100%;
     display: flex;
-    flex-wrap: wrap;        
-}
-
-#uf{  /* Alterar */
-    margin-top: 20px;
+    flex-wrap: wrap; 
+    align-items: flex-start;       
 }
 
 .campo{
     margin-top: 15px;    
+}
+#divBtnEnviar{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 15px;
 }
 
 #btnEnviar{
@@ -208,13 +245,12 @@ h2, h3{
     color: #fff;
     font-weight: 900;
     border: none;
-    border-radius: 20px;    
-    width: 15%;
-    padding:2%;
-    margin-top: 5%;
-    margin-left: 40%;
-    margin-bottom: 2%;
+    border-radius: 20px;   
     cursor: pointer;
+    min-width: 90px;
+    max-width: 100px;
+    min-height: 40px;
+    max-height: 50px;
 }
 
 footer{
@@ -234,10 +270,11 @@ footer h3{
     width: 100%;
     justify-content: center;    
     color: #fff;    
-    padding: 20px;   
+    padding: 0px;   
     justify-content: space-around;
     border-bottom: solid #e3e7e4 2px;  
-    box-shadow: 0px 2px 0px #dce0e2; 
+    box-shadow: 0px 2px 0px #dce0e2;
+    padding-bottom: 10px; 
 } 
 
 .redes img{
@@ -251,7 +288,7 @@ footer h3{
     background: linear-gradient(#abecb6, #b8d5e4);
     display: flex;
     flex-direction: column;
-    padding: 20px;
+    padding: 0px;
     text-align: left;
 }
 
@@ -267,7 +304,59 @@ footer h3{
 }
 
 #cComercial{
-    margin-top: 35px;
+    margin-top: 10px;
     margin-right: 20px;
     text-align: right;    
 }
+
+/* ================CLASSES UNICAS================ */
+.textShadowTitles{
+    text-shadow: 1px 1px black;
+}
+
+.size-margin-90-5{
+    width: 90%;
+    margin-left: 5%;
+}
+.gapColuna{
+    gap:10px;
+}
+
+.columnFlexBox{
+    display:flex;
+    flex-direction: column;
+}
+
+/* ===================Media Querys=================== */
+@media only screen and (max-width: 680px) {
+    
+    #calendario{
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #calendario img{
+        width: 100%;
+        max-width: 450px;
+    }
+    #calendario p{
+        margin-top: 10px;
+    }
+
+    #quemSomosTitulo{
+        margin-top:15px;
+    }
+
+    #quemSomos{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    #quemSomos img{
+        width: 100%;
+        max-width: 350px;
+    }
+}
+
