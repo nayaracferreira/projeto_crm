@@ -90,4 +90,4 @@ const cep = document.querySelector("#cep");
    mask: '+{55}(00)00000-0000'
   }
  
-   let mask = IMask(foneMask, maskOptions);   
+   let mask = IMask(foneMask, maskOptions);    
