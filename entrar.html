@@ -28,7 +28,7 @@
 
             <div>
                 <label for="senha">Senha</label>
-                <input name="senha" type="password" id="senha" placeholder="Digite sua senha" required>
+                <input name="senha" type="password" id="senha" placeholder="Digite sua senha" minlength="8" maxlength="8" required>
             </div>
 
             <label>
@@ -36,9 +36,9 @@
             </label>
 
             <a href="agendamento.html"></a>
-            <button type="submit" class="btnAcesso">Entrar</button>
-            
+            <button type="submit" class="btnAcesso">Entrar</button>            
         </form>
+        
         <form action= "cadastre.html">
             <div id="cadastrese">
             <h2 class="textShadowTitles">Não tem acesso ainda?</h2>
@@ -51,15 +51,15 @@
     <footer>
         <h2 class="textShadowTitles" id="sigaNos">Sigam-nos nas Redes sociais</h2>
         <div class="redes">            
-            <a href="https://pt-br.facebook.com/"><img src="logo_facebook.png" alt="Logo Facebook"></a>
-            <a href="https://www.instagram.com/"><img src="logo_instagram.png" alt="Logo do Instagram"></a>
-            <a href="https://www.youtube.com/"><img src="logo_youtube.png" alt="Logo do Youtube"></a>
+            <a href="https://pt-br.facebook.com/"><img src="logo_facebook.png" alt="Logo Facebook: círculo com f no centro"></a>
+            <a href="https://www.instagram.com/"><img src="logo_instagram.png" alt="Logo do Instagram: círculo com uma câmera em perspectiva frontal no centro"></a>
+            <a href="https://www.youtube.com/"><img src="logo_youtube.png" alt="Logo do Youtube: círculo onde no centro tem um retangulo com um triângulo rotacionado"></a>
         </div>
 
         <div class="cabecalho">
             <p id="faleConosco"><b>Fale conosco</b></p>
             <div>
-                <img src="logo_gmail.png" alt="Logo Gmail">        
+                <img src="logo_gmail.png" alt="Logo Gmail: a representação de um envelope fechado">        
             </div>
             <div>
             <a href="#">nayara.dcf@gmail.com</a>
@@ -72,9 +72,7 @@
             </p>
             </div>
         </footer>             
-    
-    <script src="https://unpkg.com/imask"></script>
-    <script src="app/app.js"></script>
+
 </body>
 
 </html>
