@@ -6,9 +6,13 @@ let botaoAgendar = document.getElementById('botaoAgendarServico');
 
 let testoAgendado = document.getElementById('testoAgendado');
 
-botaoAdicionar.addEventListener('click',AdicionarServicoLista); //Evento ao clicar no botão
+let botaoLimpar = document.getElementById('botaoLimpar');
+
+botaoAdicionar.addEventListener('click',AdicionarServicoLista); 
 
 botaoAgendar.addEventListener('click',MostrarInformacaoNaPagina);
+
+botaoLimpar.addEventListener('click',limparMensagem);
 
 let InformacoesAgendadasCliente= {
     nome : "",
@@ -52,7 +56,14 @@ function MostrarInformacaoNaPagina(){
     InformacoesAgendadasCliente.data = document.getElementById("dataAgendada").value;
 
     testoAgendado.textContent = `Cliente de nome ${InformacoesAgendadasCliente.nome} com o telefone ${InformacoesAgendadasCliente.telefone} que mora na rua ${InformacoesAgendadasCliente.logradouro}, ${InformacoesAgendadasCliente.numero} no bairro ${InformacoesAgendadasCliente.bairro}, ${InformacoesAgendadasCliente.localidade}, ${InformacoesAgendadasCliente.uf} e com e-mail  ${InformacoesAgendadasCliente.email} está com o serviço de ${InformacoesAgendadasCliente.servico } agendado para o dia ${InformacoesAgendadasCliente.data}`
+    
+    botaoLimpar.hidden=false;
+    testoAgendado.hidden=false;
+}
 
+function limparMensagem(){
+  botaoLimpar.hidden=true;
+  testoAgendado.hidden=true;
 }
 
 const cep = document.querySelector("#cep");
@@ -90,4 +101,4 @@ const cep = document.querySelector("#cep");
    mask: '+{55}(00)00000-0000'
   }
  
-   let mask = IMask(foneMask, maskOptions);    
+   let mask = IMask(foneMask, maskOptions); 
