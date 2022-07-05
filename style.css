@@ -35,9 +35,9 @@ h1{
     text-align: center;
     margin-top: 20px; 
     margin-left: 10px;
-    color: #75db8f ;
+    color:#399045;
     font-size: 40px; 
-    text-shadow: 2px 2px #2d392d8f;
+    
     min-width: 240px;   
 }
 
@@ -139,8 +139,8 @@ h2, h3{
 }
 
 .btnAcesso{
-    background-color: #75db8f;
-    color: #fff;
+    background-color: #399045;
+    color: #020f04;
     font-weight: 900;
     border: none;
     border-radius: 20px;    
@@ -153,7 +153,8 @@ h2, h3{
 /* MAIN AGENDAMENTO -------------------------------- */
 #consulteAgenda{
     max-width: 120px;
-    text-shadow: 1px 1px #2d392d8f;
+    color:#399045;
+    
     font-size:18px;
     font-weight: 700;
 }
@@ -184,8 +185,8 @@ h2, h3{
 }
 
 .btnAgendamento{
-    background-color: #75db8f;
-    color: #fff;
+    background-color: #399045;
+    color: #020f04;
     font-weight: 900;
     border: none;
     border-radius: 20px;    
@@ -241,8 +242,8 @@ h2, h3{
 }
 
 #btnEnviar{
-    background-color: #75db8f;
-    color: #fff;
+    background-color: #399045;
+    color: #020f04;
     font-weight: 900;
     border: none;
     border-radius: 20px;   
@@ -317,7 +318,7 @@ footer h3{
 
 /* ================CLASSES UNICAS================ */
 .textShadowTitles{
-    text-shadow: 1px 1px #2d392d8f;
+    color:#399045;    
 }
 
 .size-margin-90-5{
