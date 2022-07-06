@@ -152,11 +152,10 @@ h2, h3{
 }
 /* MAIN AGENDAMENTO -------------------------------- */
 #consulteAgenda{
-    max-width: 120px;
-    color:#399045;
-    
-    font-size:18px;
-    font-weight: 700;
+    display:flexbox;
+    justify-content: center;
+    font-weight: 500;    
+    color:#285e2f; 
 }
 
 #formAgendamento{
