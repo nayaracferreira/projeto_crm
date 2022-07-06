@@ -368,4 +368,9 @@ footer h3{
         width: 100%;
         max-width: 350px;
     }
+    
+    #consulteAgenda img{
+        width: 30px;
+        height: auto;
+    }
 }
